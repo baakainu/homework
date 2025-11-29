@@ -1,1 +1,45 @@
 /* 여기에 스타일을 구현해 주세요 */
+
+/* 전체 아바타 컨테이너 */
+.avatar-container {
+  width: 500px;
+  margin: 40px auto;
+}
+
+/* 아바타 하나 */
+.avatar {
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin: 0 20px 20px 0;
+  position: relative;
+}
+
+/* 이미지 */
+.avatar img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 상태 표시 (회색/초록 원) */
+.status {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* 오프라인 - 회색 */
+.status.offline {
+  background-color: #dbdbdb;
+}
+
+/* 온라인 - 초록색 */
+.status.online {
+  background-color: #4cfe88;
+}
