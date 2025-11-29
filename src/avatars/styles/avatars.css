@@ -43,3 +43,7 @@
 .status.online {
   background-color: #4cfe88;
 }
+
+.break {
+  clear: both;
+}
